@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-3325043025817377">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Book Sphere</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3325043025817377"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="">
+                        <span class="logo-icon">📚</span>
+                        <span class="text">Book Sphere</span>
+                    </a>
+                </div>
+                <div class="nav-links" id="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#featured-books">Books</a>
+                    <a href="#categories">Categories</a>
+                    <a href="about.html">About</a>
+                    <a href="#contactus">Contact</a>
+                </div>
+                <div class="theme-toggle" id="theme-toggle">
+                    🌙 <!-- Moon icon for dark theme -->
+                </div>
+                <div class="menu-toggle" id="menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Your Next Favorite Book</h1>
+                <p>Find the perfect books for every interest and explore our vast collection of bestsellers, new
+                    releases, and hidden gems.</p>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search by title, author or keyword...">
+                    <button id="search-button">🔍</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="search-message" class="search-message"></div>
+
+    <div class="slider-container">
+        <div class="slider" id="book-slider"></div>
+    </div>
+
+    <main class="container">
+        <div class="categories-wrapper">
+            <div class="category active" id="All-Books">All Books</div>
+            <div class="categories" id="categories">
+                <div class="category" id="French">French</div>
+                <div class="category" id="Worksheets">Worksheets</div>
+                <div class="category" id="Mystery">Mystery</div>
+                <div class="category" id="English">English</div>
+                <div class="category" id="German">German</div>
+                <div class="category" id="Fiction">Fiction</div>
+                <div class="category" id="Teachers">Teachers</div>
+                <div class="category" id="Literature">Literature</div>
+                <div class="category" id="Vocabulary">Vocabulary</div>
+                <div class="category" id="Kids">Kids</div>
+                <div class="category" id="Exams">Exams</div>
+                <div class="category" id="Spanish">Spanish</div>
+                <div class="category" id="Self Help">Self Help</div>
+                <div class="category" id="Biography">Biography</div>
+                <div class="category" id="Course">Course</div>
+                <div class="category" id="Education">Education</div>
+            </div>
+        </div>
+    </main>
+
+
+    <h2 class="section-title">📚 Bestsellers</h2>
+
+    <div class="books-grid" id="bestseller-books">
+        <!-- Books will be loaded here from JS -->
+    </div>
+
+    <h2 class="section-title">✨ Featured Books</h2>
+
+    <div class="books-grid" id="featured-books">
+        <!-- Books will be loaded here from JS -->
+    </div>
+    </main>
+
+    <div class="pagination">
+        <button id="prev-page">Previous</button>
+        <div id="page-numbers"></div>
+        <button id="next-page">Next</button>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section" id="about">
+                    <h3 class="footer-title">About BookSphere</h3>
+                    <p>We're passionate about books and connecting readers with their next great read. Our mission is to
+                        make book discovery easy and enjoyable.</p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title" id="contactus">Contact Us</h3>
+                    <form id="contact-form" class="contact-form">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links" id="quick-links">
+                        <a href="https://whatsapp.com/channel/0029Vb5vL9LDuMRmc0mNvs3T">Whatsapp</a>
+                        <br>
+                        <a href="https://www.instagram.com/book.sphere7?igsh=MTVncHp4czA3bzY2Ng==">Instagram</a>
+                        <br>
+                        <a href="https://www.facebook.com/share/g/1ERrACB9KU/ ">Facebook</a>
+                        <br>
+                        <a
+                            href="https://www.reddit.com/user/Competitive_Wash_629/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button">Reddit</a>
+                        <br>
+                        <a href="mailto:books.era786@gmail.com">G-mail</a>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Stay Connected</h3>
+                    <p>Subscribe to our newsletter for updates and exclusive offers.</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email address">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2025 BookSphere Bookstore. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top">↑</button>
+    <button id="back-to-bottom" title="Go to bottom">↓</button>
+    <script src="script.js"></script>
+</body>
+
+</html>

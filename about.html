@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-3325043025817377">
+    <title>About Us - Book Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3325043025817377"
+        crossorigin="anonymous"></script> <!-- Link to your existing CSS file -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo" id="logo">
+                    <a href="index.html#home">
+                        <span class="logo-icon">📚</span>
+                        <span class="text">Book Sphere</span>
+                    </a>
+                </div>
+                <div class="nav-links" id="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="#featured-books">Books</a>
+                    <a href="index.html#categories">Categories</a>
+                    <a href="about.html">About</a>
+                    <a href="#contactus">Contact</a>
+                </div>
+                <div class="theme-toggle" id="theme-toggle">
+                    🌙 <!-- Moon icon for dark theme -->
+                </div>
+                <div class="menu-toggle" id="menu-toggle">☰</div>
+                <script>
+                    // Function to toggle between light and dark themes
+                    // Function to toggle the mobile menu
+                    function setupMenuToggle() {
+                        const menuToggle = document.getElementById('menu-toggle');
+                        const navLinks = document.getElementById('nav-links');
+
+                        if (menuToggle && navLinks) {
+                            menuToggle.addEventListener('click', () => {
+                                navLinks.classList.toggle('active');
+                            });
+                        } else {
+                            console.error('Menu toggle or nav links element not found!');
+                        }
+                    }
+
+                    // Call the function on page load
+                    document.addEventListener('DOMContentLoaded', () => {
+                        setupMenuToggle();
+                    });
+                    // Function to update the theme icon
+                    function updateThemeIcon(theme) {
+                        const themeToggle = document.getElementById('theme-toggle');
+                        themeToggle.textContent = theme === 'dark-theme' ? '☀️' : '🌙';
+                    }
+
+                    // Call the function on page load
+                    document.addEventListener('DOMContentLoaded', () => {
+                        setupThemeToggle();
+                    });
+                </script>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <h1>About Us</h1>
+            <p class="subtitle">Welcome to Book Library, your go-to destination for discovering and downloading amazing
+                books!</p>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Mission</h2>
+                    <p>
+                        At Book Library, we believe in the power of knowledge and storytelling. Our mission is to
+                        provide a platform where book lovers can explore, read, and download their favorite books for
+                        free. Whether you're a fan of fiction, non-fiction, or academic texts, we've got something for
+                        everyone.
+                    </p>
+
+                    <h2>What We Offer</h2>
+                    <ul>
+                        <li>A vast collection of books across various genres.</li>
+                        <li>Easy-to-use search and download features.</li>
+                        <li>Read books online without any hassle.</li>
+                        <li>Regular updates with new and trending titles.</li>
+                    </ul>
+
+                    <h2>Our Team</h2>
+                    <p>
+                        We are a passionate team of book enthusiasts, developers, and designers dedicated to making
+                        reading accessible to everyone. Our goal is to create a seamless experience for our users and
+                        foster a love for reading.
+                    </p>
+                </div>
+
+                <div class="about-image">
+                    <img src="img/about.jpg" alt="About Us Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section" id="about">
+                    <h3 class="footer-title">About BookSphere</h3>
+                    <p>We're passionate about books and connecting readers with their next great read. Our mission is to
+                        make book discovery easy and enjoyable.</p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title" id="contactus">Contact Us</h3>
+                    <form id="contact-form" class="contact-form">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links" id="quick-links">
+                        <a href="https://whatsapp.com/channel/0029Vb5vL9LDuMRmc0mNvs3T">Whatsapp</a>
+                        <br>
+                        <a href="https://www.instagram.com/book.sphere7?igsh=MTVncHp4czA3bzY2Ng==">Instagram</a>
+                        <br>
+                        <a href="https://www.facebook.com/share/g/1ERrACB9KU/ ">Facebook</a>
+                        <br>
+                        <a
+                            href="https://www.reddit.com/user/Competitive_Wash_629/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button">Reddit</a>
+                        <br>
+                        <a href="mailto:books.era786@gmail.com">G-mail</a>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Stay Connected</h3>
+                    <p>Subscribe to our newsletter for updates and exclusive offers.</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email address">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2025 BookSphere Bookstore. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top">↑</button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
